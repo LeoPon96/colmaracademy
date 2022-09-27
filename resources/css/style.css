@@ -1,3 +1,27 @@
 html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+/* Header */
+
+header {
+    height: 4rem;
+    position: fixed;
+    z-index: 100;
+}
+
+header img {
+    height: 2rem;
+    padding-left: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding-right: 1.5rem;
 }
