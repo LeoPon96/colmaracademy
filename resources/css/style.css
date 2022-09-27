@@ -25,3 +25,9 @@ header nav ul {
     list-style: none;
     padding-right: 1.5rem;
 }
+
+/* Main */
+
+main .landing {
+    background-color: lightgray;
+}
