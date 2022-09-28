@@ -30,4 +30,22 @@ header nav ul {
 
 main .landing {
     background-color: lightgray;
+    display: flex;
+}
+
+.landing #banner {
+    padding-left: 24px;
+}
+
+.landing .landing-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 24px;
+}
+
+.landing .landing-text button {
+    padding: 8px auto;
+    width: 100%;
 }
