@@ -6,17 +6,20 @@ html {
 /* Header */
 
 header {
-    height: 4rem;
     position: fixed;
+    width: 100%;
+    top: 0;
     z-index: 100;
-    color: white;
-}
-
-header img {
-    height: 2rem;
-    padding-left: 1.5rem;
+    background-color: white;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+header .logo ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
 }
 
 header h3 {
@@ -35,10 +38,14 @@ header nav ul {
     padding-right: 1.5rem;
 }
 
+header nav li {
+    padding-right: 16px;
+}
+
 /* Main */
 
 main {
-    top: 4rem;
+    margin-top: 4rem;
 }
 
 main .landing {
@@ -58,9 +65,12 @@ main .landing {
     justify-content: center;
     flex-direction: column;
     padding-left: 24px;
+    text-align: left;
 }
 
 .landing .landing-text button {
     padding: 8px auto;
     width: 100%;
+    background-color: darkgray;
+    box-shadow: none;
 }
