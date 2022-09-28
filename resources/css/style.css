@@ -9,6 +9,7 @@ header {
     height: 4rem;
     position: fixed;
     z-index: 100;
+    color: white;
 }
 
 header img {
@@ -16,6 +17,14 @@ header img {
     padding-left: 1.5rem;
     display: flex;
     align-items: center;
+}
+
+header h3 {
+    color: gray;
+}
+
+header span {
+    color: lightgray;
 }
 
 header nav ul {
@@ -28,6 +37,10 @@ header nav ul {
 
 /* Main */
 
+main {
+    top: 4rem;
+}
+
 main .landing {
     background-color: lightgray;
     display: flex;
@@ -35,6 +48,8 @@ main .landing {
 
 .landing #banner {
     padding-left: 24px;
+    width: 60%;
+    height: auto;
 }
 
 .landing .landing-text {
