@@ -1,6 +1,7 @@
 html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 16px;
+    font-size: 22px;
+    background-color: lightgray;
 }
 
 /* Header */
@@ -16,7 +17,7 @@ header {
     justify-content: space-between;
 }
 
-header .logo ul{
+header .logo ul {
     display: flex;
     align-items: center;
     list-style: none;
@@ -35,7 +36,7 @@ header nav ul {
     justify-content: flex-end;
     align-items: center;
     list-style: none;
-    padding-right: 1.5rem;
+    padding-right: 24px;
 }
 
 header nav li {
@@ -47,11 +48,10 @@ header nav li {
 /* Landing Page */
 
 main {
-    margin-top: 6rem;
+    margin-top: 84px;
 }
 
 main .landing {
-    background-color: lightgray;
     display: flex;
 }
 
@@ -71,11 +71,11 @@ main .landing {
 }
 
 .landing .landing-text h1 {
-    font-size: 3.125rem;
+    font-size: 50px;
 }
 
 .landing-text h3{
-    font-size: 2rem;
+    font-size: 32px;
 }
 
 .landing .landing-text .button {
@@ -93,12 +93,52 @@ main .landing {
 
 /* Informal */
 
-.practicing {
+.informal {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.informal .practicing {
     margin: 34px 24px;
     width: 60%;
     color: hsla(0, 0%, 30%, 1);
 }
 
+.practicing img {
+    width: 100%;
+}
+
 .practicing h2 {
-    font-size: 3.125rem;
+    font-size: 50px;
+}
+
+.informal .small-containers {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 16px;
+}
+
+.container {
+    display: flex;
+    justify-items: space-around;
+    align-content: center;
+    padding: 16px;
+}
+
+.container img {
+    width: 35%;
+    height: auto;
+}
+
+.container ul {
+    list-style: none;
+    width: 65%;
+}
+
+
+.thesis video {
+    width: 100%;
 }
