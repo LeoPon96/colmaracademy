@@ -2,6 +2,7 @@ html {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 22px;
     background-color: lightgray;
+    color: hsla(0, 0%, 30%, 1);
 }
 
 /* Header */
@@ -121,7 +122,7 @@ main .landing {
     padding: 16px;
 }
 
-.container {
+.small-containers .container {
     display: flex;
     justify-items: space-around;
     align-content: center;
@@ -138,7 +139,61 @@ main .landing {
     width: 65%;
 }
 
+/* Learning */
+
+.learning h2 {
+    text-align: center;
+}
+
+.courses img {
+    height: auto;
+    width: 100%;
+}
+
+.courses {
+    margin:  16px 56px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.course {
+    width: 30%;
+    margin: 16px;
+    background-color: white;
+}
+
+.course h4, p {
+    padding: 16px;
+    margin-block: 0;
+}
+
+/* Thesis */
+
+.thesis {
+    background-color: hsla(0, 0%, 80%, 1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.thesis h2 {
+    
+    text-align: center;
+}
+
+.thesis .thesis-video {
+    width: 60%;
+}
 
 .thesis video {
     width: 100%;
+}
+
+.thesis-containers {
+    display: flex;
+    flex-direction: column;
+}
+
+.thesis-containers img {
+    height: auto;
+    width: 35%;
 }
