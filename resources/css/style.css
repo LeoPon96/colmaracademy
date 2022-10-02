@@ -11,10 +11,14 @@ a {
 
 /* Header */
 
-header {
+header .mobile {
+    display: none;
+}
+
+header .desktop {
     position: fixed;
     width: 100%;
-    height: 64px;
+    height: 2.9090rem;
     top: 0;
     z-index: 100;
     background-color: white;
@@ -42,16 +46,35 @@ header nav ul {
     justify-content: flex-end;
     align-items: center;
     list-style: none;
-    padding-right: 24px;
-    font-size: 18px;
+    padding-right: 1.0909rem;
+    font-size: 0.81rem;
 }
 
 header nav li {
-    padding-right: 16px;
+    padding-right: 0.72rem;
 }
 
-@media screen only and (max-width: 400px) {
-    
+@media only screen and (max-width: 720px) {
+
+    header .desktop {
+        display: none;
+    }
+
+    header .mobile {
+        display: block;
+        height: 2.9rem;
+        margin: 0;
+    }
+
+    header ul {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    header li {
+        list-style: none;
+    }
 }
 
 /* Main */
@@ -59,7 +82,7 @@ header nav li {
 /* Landing Page */
 
 main {
-    margin-top: 64px;
+    margin-top: 2.9rem;
     background-color: hsla(0, 0%, 70%, 1);
 }
 
@@ -68,7 +91,7 @@ main .landing {
 }
 
 .landing #banner {
-    margin: 32px 24px;
+    margin: 1.45rem 1.09rem;
     width: 60%;
     height: auto;
 }
@@ -83,15 +106,15 @@ main .landing {
 }
 
 .landing .landing-text h1 {
-    font-size: 50px;
+    font-size: 2.27rem;
 }
 
 .landing-text h3{
-    font-size: 32px;
+    font-size: 1.45rem;
 }
 
 .landing .landing-text .button {
-    padding: 8px auto;
+    padding: 0.36rem auto;
     width: 100%;
     background-color: hsla(0, 0%, 30%, 1);
     box-shadow: none;
@@ -103,6 +126,23 @@ main .landing {
     color: white;
 }
 
+@media only screen and (max-width: 720px) {
+
+    main {
+        margin-top: 0;
+    }
+
+    .landing {
+        display: flex;
+        align-content: center;
+        flex-direction: column;
+    }
+
+    .landing #banner {
+        width: 100%;
+    }
+}
+
 /* Informal */
 
 .informal {
@@ -111,7 +151,7 @@ main .landing {
 }
 
 .informal .practicing {
-    margin: 34px 24px;
+    margin: 1.45rem 1.09rem;
     width: 60%;
     color: hsla(0, 0%, 30%, 1);
 }
@@ -121,7 +161,7 @@ main .landing {
 }
 
 .practicing h2 {
-    font-size: 50px;
+    font-size: 2.27rem;
 }
 
 .informal .small-containers {
@@ -136,7 +176,7 @@ main .landing {
     display: flex;
     justify-items: space-around;
     align-content: center;
-    padding: 32px 16px 16px 16px;
+    padding: 1.45rem 0.72rem 0.72rem 0.72rem;
     border: 1px solid hsla(0, 0%, 80%, 1);
 }
 
@@ -152,20 +192,20 @@ main .landing {
 .container ul {
     list-style: none;
     width: 65%;
-    font-size: 16px;
+    font-size: 0.72rem;
 }
 
 /* Learning */
 
 .learning {
     background-color: hsla(0, 0%, 80%, 1);
-    bottom: 32px;
+    bottom: 1.45rem;
 }
 
 .learning h2 {
     text-align: center;
     margin: 0;
-    padding: 32px 0;
+    padding: 1.45rem 0;
 }
 
 .courses img {
@@ -174,24 +214,24 @@ main .landing {
 }
 
 .courses {
-    margin:  0 56px;
+    margin:  0 2.54rem;
     display: flex;
     flex-wrap: wrap;
 }
 
 .course {
     width: 30%;
-    margin: 16px;
+    margin: 0.72rem;
     background-color: white;
 }
 
 .course h4 {
-    padding: 16px;
+    padding: 0.72rem;
     margin-block: 0;
 }
 
 .course p {
-    padding: 16px;
+    padding: 0.72rem;
     margin-block: 0;
 }
 
@@ -199,13 +239,13 @@ main .landing {
 
 .thesis {
     background-color: hsla(0, 0%, 90%, 1);
-    bottom: 32px;
+    bottom: 1.45rem;
 }
 
 .thesis h2 {
     text-align: center;
     margin: 0;
-    padding: 32px 0;
+    padding: 1.45rem 0;
 }
 
 .thesis-main {
@@ -226,13 +266,13 @@ main .landing {
     flex-direction: column;
     align-content: center;
     width: 40%;
-    padding: 16px;
+    padding: 0.72rem;
 }
 
 .thesis-containers .container {
     display: flex;
     align-content: center;
-    padding: 16px;
+    padding: 0.75rem;
 }
 
 #fisma {
@@ -247,7 +287,7 @@ main .landing {
 .thesis-containers ul {
     list-style: none;
     width: 65%;
-    font-size: 16px;
+    font-size: 0.75rem;
 }
 
 /* Footer */
@@ -256,16 +296,16 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 16px;
+    font-size: 0.75rem;
 }
 
 footer ul {
     list-style: none;
     display: flex;
     align-items: center;
-    padding: 0 24px;
+    padding: 0 1.09rem;
 }
 
 footer li {
-    padding-right: 16px;
+    padding-right: 0.75rem;
 }
