@@ -134,12 +134,26 @@ main .landing {
 
     .landing {
         display: flex;
+        justify-items: flex-start;
         align-content: center;
         flex-direction: column;
     }
 
     .landing #banner {
         width: 100%;
+        margin: 0;
+    }
+
+    .landing .landing-text {
+        display: block;
+        padding: 1.45rem 0.72rem;
+        width: 100%;
+        padding: 0;
+    }
+
+    .landing #button {
+        width: 100%;
+        padding: 1.09rem 0 1.45rem 0;
     }
 }
 
@@ -195,6 +209,30 @@ main .landing {
     font-size: 0.72rem;
 }
 
+@media only screen and (max-width: 720px) {
+
+    .informal .practicing {
+        display: none;
+    }
+
+    .informal .small-containers {
+        width: 100%;
+        padding: 0.72rem;
+    }
+
+    .informal .small-containers img {
+        width: 100%;
+        height: auto;
+    }
+
+    .informal .small-containers .container {
+        display: flex;
+        flex-direction: column;
+        border: hidden;
+        padding: 0;
+    }
+}
+
 /* Learning */
 
 .learning {
@@ -211,6 +249,10 @@ main .landing {
 .courses img {
     height: auto;
     width: 100%;
+}
+
+.learing .mobile {
+    display: none;
 }
 
 .courses {
@@ -235,11 +277,39 @@ main .landing {
     margin-block: 0;
 }
 
+@media only screen and (max-width: 720px) {
+
+    .learning {
+        background-color: hsla(0, 0%, 90%, 1);
+    }
+
+    .learning .courses {
+        display: none;
+    }
+
+    .learning .mobile {
+        display: block;
+        text-align: left;
+        background-color: hsla(0, 0%, 80%, 1);
+    }
+
+    .learning h4 {
+        display: block;
+        padding: 0.72rem 0.72rem 1.02rem 0.72rem;
+        margin: 0;
+        border: 8px solid hsla(0, 0%, 90%, 1);
+    }
+}
+
 /* Thesis */
 
 .thesis {
     background-color: hsla(0, 0%, 90%, 1);
     bottom: 1.45rem;
+}
+
+.mobile-video {
+    display: none;
 }
 
 .thesis h2 {
@@ -290,6 +360,18 @@ main .landing {
     font-size: 0.75rem;
 }
 
+@media only screen and (max-width: 720px) {
+
+    .thesis-main {
+        display: none;
+    }
+
+    .thesis .mobile-video {
+        display: block;
+        bottom: 1.09rem;
+    }
+}
+
 /* Footer */
 
 footer {
@@ -308,4 +390,11 @@ footer ul {
 
 footer li {
     padding-right: 0.75rem;
+}
+
+@media only screen and (max-width: 720px) {
+
+    .footer ul {
+        display: none;
+    } 
 }
